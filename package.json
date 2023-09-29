@@ -1,11 +1,24 @@
 {
-  "name": "youtube-service",
-  "module": "index.ts",
-  "type": "module",
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  }
+	"name": "youtube-service",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@total-typescript/shoehorn": "^0.1.1",
+		"@total-typescript/ts-reset": "^0.5.1",
+		"@types/lodash": "^4.14.199",
+		"bun-types": "latest",
+		"prettier": "^3.0.3",
+		"prettier-config": "github:lorenzobasso/prettier-config"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"google-auth-library": "^9.0.0",
+		"googleapis": "^126.0.1",
+		"lodash": "^4.17.21"
+	}
 }
