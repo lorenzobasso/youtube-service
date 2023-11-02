@@ -1,1 +1,1 @@
-export type ChunkableRequest<T, R> = (args: T | T[]) => Promise<R[]>
+export type ChunkableRequest<T, R> = (args: T[]) => Promise<R[]>
